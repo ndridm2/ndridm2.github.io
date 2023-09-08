@@ -1,0 +1,41 @@
+.what-i-do{
+    .doing-head{
+        margin-top: 60px;
+        &::before{
+            @extend %circle-head;
+        }
+    }
+
+      .box-part{
+          padding:30px 10px;
+          margin:60px 0px;
+          min-height: 500px;
+          border-radius: 15px;
+          background:rgba(255,255,255,0.1);
+          overflow: hidden;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
+          border: 2px solid rgba(255, 255, 255, 0.157) ;
+          transition: $transition-standard;
+
+          &:hover{
+              transition: $transition-standard;
+              transform: translateY(-7px);
+              box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+
+          }
+          .title{
+              margin-top: 15px;
+              font-size: 20px;
+          }
+          .text{
+            margin:20px 0px;
+            font-size: 18px;
+        }
+  
+        }
+      
+}
+

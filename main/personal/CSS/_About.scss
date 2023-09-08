@@ -1,0 +1,61 @@
+#About-me{
+    min-height: 900px;
+}
+.about-head{
+    h2{
+        font-size: 48px;
+    }
+    span{
+        color: $secondary-font-color;
+    }
+}
+.about-content{
+   @extend %share-margin;
+    .about-text{
+        h3{
+            font-size: 36px;
+            span{
+                color: $secondary-font-color;
+            }
+        }
+        .text{
+            p{
+                font-size: 20px;
+                line-height: 2;
+            }
+        }
+        .shadow-btn{
+            margin-right: 10px;
+            box-shadow: 73px 6px 200px 0 #fff;
+        }
+    }
+
+    .about-information{
+        @extend %share-box;
+        border-radius: 10px;
+
+            span{
+            display: block;
+            margin-bottom: 33px;
+            font-size: 24px;
+        }
+        .about-social{
+            margin-top: 60px;
+            
+            a{
+                display: inline-block;
+                border: 2px solid #fff;
+                padding: 10px;
+                border-radius: 50%;
+                margin-bottom: 10px;
+                img{
+                    transition: $transition-standard;
+                }
+                &:hover>img{
+                    transform: rotate(360deg);
+                    transition: $transition-standard;
+                }
+            }
+        }
+    }
+}

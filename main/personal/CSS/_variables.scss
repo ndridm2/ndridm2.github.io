@@ -1,0 +1,57 @@
+$main-background-color: #1E1816;
+$main-background-boxColor:#1E1816;
+$main-font-color: #fff;
+$secondary-font-color:#FF9301;
+$transition-standard:all ease-in-out .3s;
+$transition-animation:all ease-in-out .9s;
+$bg-dark:#212529;
+$gradiant-portfolio: linear-gradient(to left top, $secondary-font-color 10%, #FF512F 90%);
+$primary: $secondary-font-color;
+$tablet-width: 1200px;
+$mobile-width:575px;
+$small-screen-width:1400px;
+
+// classes
+.orange{
+    color: $secondary-font-color;
+}
+.bg-orange{
+    background-color: $secondary-font-color;
+}
+
+.Container{
+    padding:  30px 0px;
+}
+// sharing property
+%share-margin{
+    margin-top: 63px;
+}
+%share-box{
+    min-height: 650px;
+    box-shadow: 4px 4px 42px 1px rgba(255, 145, 1, 0.15);
+    padding: 40px 30px;
+}
+%circle-head{
+    content: "";
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: $secondary-font-color;
+    position: absolute;
+    left: -20px;
+    top: -2px;
+    z-index: -1;
+    animation: upToDown 1s ease-in-out infinite alternate;
+
+}
+
+%hover-btn-portfolio{
+    background: $gradiant-portfolio;
+    background-clip: none ;
+    -webkit-text-fill-color: #fff ;
+    border: 5px solid #fff; 
+    box-shadow: #222 1px 0 10px;
+    text-decoration: underline;
+
+}
+
