@@ -1,5 +1,5 @@
 // create a writer effect for intro
-const data = ['Frontend Developer','Web Designer']
+const data = ['Mobile','Android','IOS','Developer']
 let placeText = document.getElementById("text");
 
 let count = 0
