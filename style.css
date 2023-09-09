@@ -642,6 +642,9 @@ footer{
     .featured-name{
         font-size: 40px;
     }
+    .featured-text-card{
+        margin-top: 20px;
+    }
     .project-box{
         width: 100%;
     }
