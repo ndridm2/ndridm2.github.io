@@ -33,11 +33,17 @@ function myMenuFunction(){
 
 /* ----- TYPING EFFECT ----- */
  let typingEffect = new Typed(".typedText",{
-    strings : ["Mobile","Apps","Android","IOS","Developer"],
+    strings : ["Mobile","Developer","Android","IOS"],
     loop : true,
-    typeSpeed : 100, 
-    backSpeed : 80,
-    backDelay : 2000
+    typeSpeed : 350, 
+    backSpeed : 350,
+    backDelay : 2000,
+    startDelay : 1000,
+    showCursor : true,
+    cursorChar : "|",
+    contentType : "html",
+    autoInsertCss : true,
+
  })
 
 

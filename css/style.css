@@ -532,6 +532,9 @@ footer{
         justify-content: center;
         height: 100vh;
     }
+    span .typedText{
+        font-size: 1.5rem;
+    }
     .featured-text{
         width: 100%;
         order: 2;
@@ -583,10 +586,13 @@ footer{
         justify-content: center;
         min-height: 150px;
         width: 100%;
-        margin-top: 100px;
+        margin-top: 145px;
+    }
+    span .typedText{
+        font-size: 20px;
     }
     .scroll-icon-box{
-        margin-top: -80%;
+        margin-top: 0%;
     }
 }
 
