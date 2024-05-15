@@ -576,6 +576,13 @@ footer{
 
 }
 
+/* MEDIA QUERY == 658 */
+@media only screen and (max-width: 658px){
+    .scroll-icon-box{
+        margin-top: -80%;
+    }
+}
+
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
 @media only screen and (max-width: 540px){
@@ -593,5 +600,8 @@ footer{
     }
     .input-field{
         width: 100%;
+    }
+    .scroll-icon-box{
+        margin-top: -80%;
     }
 }
