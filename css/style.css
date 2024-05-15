@@ -547,7 +547,7 @@ footer{
         justify-content: center;
         min-height: 150px;
         width: 100%;
-        margin-top: 65px;
+        margin-top: 85px;
     }
     .image, .image img{
         width: 150px;
@@ -578,6 +578,13 @@ footer{
 
 /* MEDIA QUERY == 658 */
 @media only screen and (max-width: 658px){
+    .featured-image{
+        order: 1;
+        justify-content: center;
+        min-height: 150px;
+        width: 100%;
+        margin-top: 100px;
+    }
     .scroll-icon-box{
         margin-top: -80%;
     }
