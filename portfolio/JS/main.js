@@ -41,6 +41,11 @@ const projectsData = [
         projectImg1 : 'images/portfolio/Frame 6.png',
         projectImg2 : 'images/portfolio/Frame 6.png',
     },
+    {
+        id: 6,
+        projectImg1 : 'images/portfolio/Frame 7.png',
+        projectImg2 : 'images/portfolio/Frame 7.png',
+    },
 
 ]
 
@@ -59,7 +64,7 @@ closePopUp.addEventListener("click",()=>{
 })
 
 // loading page
-const spinner = document.querySelector(".spinner")
-window.addEventListener("load",()=>{
-    spinner.classList.add("active")
-})
+// const spinner = document.querySelector(".spinner")
+// window.addEventListener("load",()=>{
+//     spinner.classList.add("active")
+// })
