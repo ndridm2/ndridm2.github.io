@@ -51,6 +51,26 @@ const projectsData = [
         projectImg1 : 'images/portfolio/Frame 8.png',
         projectImg2 : 'images/portfolio/Frame 8.png',
     },
+    {
+        id: 9,
+        projectImg1 : 'images/portfolio/Frame 9.png',
+        projectImg2 : 'images/portfolio/Frame 9.png',
+    },
+    {
+        id: 10,
+        projectImg1 : 'images/portfolio/Frame 10.png',
+        projectImg2 : 'images/portfolio/Frame 10.png',
+    },
+    {
+        id: 11,
+        projectImg1 : 'images/portfolio/Frame 11.png',
+        projectImg2 : 'images/portfolio/Frame 11.png',
+    },
+    {
+        id: 12,
+        projectImg1 : 'images/portfolio/Frame 12.png',
+        projectImg2 : 'images/portfolio/Frame 12.png',
+    },
 
 ]
 
