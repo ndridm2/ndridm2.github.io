@@ -42,9 +42,14 @@ const projectsData = [
         projectImg2 : 'images/portfolio/Frame 6.png',
     },
     {
-        id: 6,
+        id: 7,
         projectImg1 : 'images/portfolio/Frame 7.png',
         projectImg2 : 'images/portfolio/Frame 7.png',
+    },
+    {
+        id: 8,
+        projectImg1 : 'images/portfolio/Frame 8.png',
+        projectImg2 : 'images/portfolio/Frame 8.png',
     },
 
 ]
