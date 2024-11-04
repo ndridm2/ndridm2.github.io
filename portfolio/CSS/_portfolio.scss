@@ -1,0 +1,126 @@
+.Portfolio-head{
+    h2{
+        font-size: 48px;
+    }
+}
+.card {
+    background: #222;
+    border: 1px solid $main-background-boxColor;
+    margin: 2rem 0;
+    overflow: hidden;
+    transition: $transition-standard;
+    position: relative;
+    img{
+        height: 200px;
+        transition: $transition-standard;
+    }
+    &:hover img{
+        transform: scale(1.1);
+        transition: $transition-standard;
+    }
+    .project-img{
+        position: absolute;
+        top: 45%;
+        right: 0;
+        transform: translate(-50%,-50%);
+        cursor: pointer;
+        opacity: 0;
+        transition: $transition-standard;
+        i{
+            font-size: 30px;
+            transition: $transition-standard;
+            &:hover{
+                transition: $transition-standard;
+                font-size: 35px;
+            }
+        }
+    }
+    &:hover .project-img{
+        opacity: 1;
+        transition: $transition-standard;
+    }
+
+    .btn-portfolio {
+        border: 5px solid;
+        border-image-slice: 1;
+        background: $gradiant-portfolio ;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-image-source: $gradiant-portfolio ; 
+        text-decoration: none;
+        transition: $transition-standard;
+        &:hover{
+            @extend %hover-btn-portfolio;
+        }
+        &:focus{
+            @extend %hover-btn-portfolio;
+
+        }
+      }
+          
+  }
+  
+  .navPills{
+      border-bottom:3px solid $bg-dark;
+      .nav-item{
+        .nav-link{
+            color: #fff;
+        }
+          .active{
+              background-color: $bg-dark;
+              border-radius: 0;
+          }
+      }
+  }
+
+  // popup
+  .portfolio-popup{
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform: scale(0);
+      width: 100vw;
+      height: 100vh;
+      background-color: #170a0a9c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: $transition-standard;
+      &.active{
+         transform: scale(1);
+      }
+
+      .carousel{
+          transform: scale(0);
+          transition: all ease .4s .4s;
+          &.active{
+              transform: scale(1);
+
+          }
+        .carousel-inner{
+            max-width: 800px;
+            .carousel-item{
+                max-width: 800px;
+                height: 500px;
+                img{
+                  max-width: 800px;
+                  height: 100%;
+              }      
+            }
+        }
+  
+      }
+      .closePopUp{
+          position: fixed;
+          top: 100px;
+          left: 50%;
+          font-size: 30px;
+          cursor: pointer;
+          transition: $transition-standard;
+          z-index: 3;
+          &:hover{
+              font-size: 35px;
+              transition: $transition-standard;
+          }
+      }
+  }

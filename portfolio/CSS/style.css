@@ -1,0 +1,361 @@
+.orange {
+  color: #FF9301;
+}
+
+.bg-orange {
+  background-color: #FF9301;
+}
+
+.Container {
+  padding: 30px 0px;
+}
+
+.card .btn-portfolio:focus, .card .btn-portfolio:hover {
+  background: linear-gradient(to left top, #FF9301 10%, #FF512F 90%);
+  background-clip: none;
+  -webkit-text-fill-color: #fff;
+  border: 5px solid #fff;
+  box-shadow: #222 1px 0 10px;
+  text-decoration: underline;
+}
+
+@-webkit-keyframes scaleUp {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  60%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  60%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@-webkit-keyframes pulse {
+  0%, 60%, 100% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+}
+@keyframes pulse {
+  0%, 60%, 100% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+}
+
+.line {
+  height: 3px;
+}
+
+.Portfolio-head h2 {
+  font-size: 48px;
+}
+
+.card {
+  background: #222;
+  border: 1px solid #1E1816;
+  margin: 2rem 0;
+  overflow: hidden;
+  transition: all ease-in-out 0.3s;
+  position: relative;
+}
+.card img {
+  height: 250px;
+  max-width: 320px;
+  object-fit: cover;
+  transition: all ease-in-out 0.3s;
+}
+.card:hover img {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.3s;
+}
+.card .project-img {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+}
+.card .project-img i {
+  font-size: 30px;
+  transition: all ease-in-out 0.3s;
+}
+.card .project-img i:hover {
+  transition: all ease-in-out 0.3s;
+  font-size: 35px;
+}
+.card:hover .project-img {
+  opacity: 1;
+  transition: all ease-in-out 0.3s;
+}
+.card .btn-portfolio {
+  border: 5px solid;
+  border-image-slice: 1;
+  background: linear-gradient(to left top, #FF9301 10%, #FF512F 90%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image-source: linear-gradient(to left top, #FF9301 10%, #FF512F 90%);
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+.navPills {
+  border-bottom: 3px solid #212529;
+}
+.navPills .nav-item .nav-link {
+  color: #fff;
+}
+.navPills .nav-item .active {
+  background-color: #212529;
+  border-radius: 0;
+}
+
+.portfolio-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  width: 100vw;
+  height: 100vh;
+  background-color: #170a0a9c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.3s;
+}
+.portfolio-popup.active {
+  transform: scale(1);
+}
+.portfolio-popup .carousel {
+  transform: scale(0);
+  transition: all ease 0.4s 0.4s;
+}
+.portfolio-popup .carousel.active {
+  transform: scale(1);
+}
+.portfolio-popup .carousel .carousel-inner {
+  max-width: 800px;
+}
+.portfolio-popup .carousel .carousel-inner .carousel-item {
+  max-width: 800px;
+  height: 500px;
+}
+.portfolio-popup .carousel .carousel-inner .carousel-item img {
+  max-width: 800px;
+  height: 100%;
+}
+.portfolio-popup .closePopUp {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  z-index: 3;
+}
+.portfolio-popup .closePopUp:hover {
+  font-size: 35px;
+  transition: all ease-in-out 0.3s;
+}
+
+@media (max-width: 1200px) and (min-width: 575px) {
+
+  .what-i-do .box-part .title {
+    font-size: 17px;
+  }
+  .what-i-do .box-part .text {
+    font-size: 14px;
+  }
+}
+/*portfolio*/
+@media (max-width: 575px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .intro-name h1 {
+    font-size: 40px !important;
+  }
+  .intro-name span {
+    font-size: 15px !important;
+  }
+  .intro-name:before {
+    top: -55px;
+    left: -50px;
+    width: 100px;
+    height: 120px;
+  }
+  .intro-name:after {
+    bottom: -55px;
+    right: -50px;
+    width: 100px;
+    height: 120px;
+  }
+  .intro-name:hover::after {
+    width: 143.5%;
+    height: 238%;
+  }
+  .intro-name:hover::before {
+    width: 143.5%;
+    height: 237%;
+  }
+  .intro .toggler {
+    top: 10px;
+    right: 10px;
+  }
+  .intro .social_media {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .about-content .about-text h3 {
+    font-size: 25px;
+  }
+  .about-content .about-text .text p {
+    font-size: 15px;
+  }
+  .about-content .about-information span {
+    font-size: 15px !important;
+  }
+  .about-content .about-information .about-social {
+    margin-top: 100px;
+  }
+
+  .Education-content .Education-information span {
+    font-size: 15px !important;
+  }
+
+  .carousel .carousel-inner {
+    max-width: 300px !important;
+  }
+  .carousel .carousel-inner .carousel-item {
+    max-width: 300px !important;
+    height: 200px !important;
+  }
+  .carousel .carousel-inner .carousel-item img {
+    max-width: 100% !important;
+    height: 100% !important;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #000000;
+  color: #fff;
+}
+
+main {
+  overflow: hidden;
+}
+
+#Contact-me h2 {
+  font-size: 48px;
+}
+#Contact-me h2 span {
+  color: #FF9301;
+}
+
+.btn-send {
+  background-color: #000000;
+  color: #fff;
+}
+.btn-send:hover {
+  background-color: #fff;
+}
+
+a {
+  transition: 0.3s all ease;
+}
+a:hover, a:focus {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+.ftco-footer-social li {
+  list-style: none;
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+.ftco-footer-social li a {
+  height: 40px;
+  width: 40px;
+  display: block;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  position: relative;
+}
+.ftco-footer-social li a span {
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ftco-footer-social li a:hover {
+  color: #FF9301;
+}
+
+.form-control {
+  height: 40px;
+  background: #fff;
+  color: #000;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.form-control:focus, .form-control:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+textarea.form-control {
+  height: inherit !important;
+}
+
+.ftco-section h2 {
+  margin-bottom: 0;
+}
+
+footer {
+  padding: 7em 0;
+}
+
+.footer-07 a {
+  color: #212529;
+}
+.footer-07 p {
+  color: rgba(255, 255, 255, 0.3);
+}
+.footer-07 .footer-heading {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.footer-07 .footer-heading .logo {
+  color: #FF9301;
+  text-decoration: none;
+}

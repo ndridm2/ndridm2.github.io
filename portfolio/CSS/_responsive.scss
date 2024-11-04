@@ -1,0 +1,172 @@
+@media(max-width:$tablet-width) and (min-width:$mobile-width){
+    // intro section
+    .intro{
+        .toggler{
+            top: 10px;
+            right:10px;
+        }    
+        .social_media {
+            bottom: 10px;
+            right:10px;
+        }
+
+    }
+    // about me section
+    .about-content{
+        .about-text{
+            h3{
+                font-size: 25px;
+            }
+            .text{
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    
+        .about-information{
+            span{
+                font-size: 15px !important;
+            }
+            .about-social{
+                margin-top: 100px;
+            }    
+        }
+    }
+        
+
+    // Education&Skills section
+.Education-content{
+    .Education-information{
+        span{
+            font-size: 15px !important;
+        }
+    }
+  }
+  .what-i-do{
+      .box-part{
+          .title{
+              font-size: 17px;
+          }
+          .text{
+            font-size: 14px;
+        }
+  
+        }
+      
+   }
+
+}
+
+/*portfolio*/
+
+
+@media(max-width:$mobile-width){
+    body{
+        overflow-x: hidden;
+    }
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    // intro section
+.intro{
+    &-name{
+        h1{
+            font-size: 40px !important;
+        }
+        span{
+            font-size: 15px !important;
+        }
+        &:before{
+            top: -55px;
+            left: -50px;
+            width: 100px;
+            height: 120px;
+
+        }
+        &:after{
+            bottom: -55px;
+            right: -50px;
+            width: 100px;
+            height: 120px;
+
+        }
+        &:hover::after{
+            width: 143.5%;
+            height: 238%;
+        }
+        &:hover::before{
+            width: 143.5%;
+            height: 237%;
+            
+        }
+
+          }
+          .toggler{
+            top: 10px;
+            right:10px;
+        }    
+
+        .social_media {
+            bottom: 10px;
+            right:10px;
+        }
+
+    } 
+
+    
+    
+    // about me section
+    .about-content{
+        .about-text{
+            h3{
+                font-size: 25px;
+            }
+            .text{
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    
+        .about-information{
+            span{
+                font-size: 15px !important;
+            }
+            .about-social{
+                margin-top: 100px;
+            }    
+        }
+    }
+        
+
+    // Education&Skills section
+.Education-content{
+    .Education-information{
+        span{
+            font-size: 15px !important;
+        }
+    }
+}
+
+
+
+.carousel{
+  .carousel-inner{
+      max-width: 300px !important;
+      .carousel-item{
+          max-width: 300px !important;
+          height: 200px !important;
+          img{
+            max-width: 100% !important;
+            height: 100% !important;
+        }      
+      }
+  }
+
+}
+
+}
+
+
